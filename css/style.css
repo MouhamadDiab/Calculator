@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page .container{
+    width: 400px;
+    background-color: #800080;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.page .container footer{
+    display: flex;
+    justify-content: space-between;
+}
+.page .container footer p{
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+.page .container footer > div{
+    border: 2px solid;
+    background-color: #d3d3d3;
+}
+.page .container footer > div .time{
+    position: relative;
+}
+.page .container footer > div .time::before{
+    content: "";
+    width: 70%;
+    position: absolute;
+    bottom: -1px;
+    height: 1px;
+    background-color: #333;
+}
+.page .container .type{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+.page .container .type p{
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif ui-monospace;
+    font-family: "Work Sans", sans-serif;
+}
+
+.page .container .good{
+    background: #d3d3d3;
+    padding: 2px;
+    margin-top: 10px;
+    padding-left: 5px;
+    border: 2px solid;
+}
+
+.page .container .result{
+    position: relative;
+    background-color: white;
+    padding: 2px;
+    height: 70px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 3px solid #008000;
+}
+.page .container .result div{
+
+}
+.page .container .result div input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.page .container .result span{
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    font-size: 30px;
+    color: #858586;
+}
+
+.page .container .scientific-buttons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 15px;
+    border: 2px solid white;
+    gap: 2px;
+    padding: 2px;
+}
+
+.page .container .scientific-buttons > button{
+    background-color: #ffc0cb;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: #008000;
+    cursor: pointer;
+    padding: 3px;
+}
+.page .container .scientific-buttons > button:hover{
+    background-color: gray;
+}
+.page .container .buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+
+.page .container .buttons button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.page .container .buttons .ac,
+.page .container .buttons  .equal{
+    grid-column: span 2;
+    color: white;
+}
+.page .container .buttons .division,
+.page .container .buttons .mult,
+.page .container .buttons .minus,
+.page .container .buttons .plus{
+    font-size: 20px;
+    background: #87ceeb;
+    color: orange;
+}
+.page .container .buttons .mult{
+    color: green;
+}
+.page .container .buttons .minus{
+    color:  blue;
+}
+.page .container .buttons .plus{
+    color: yellow;
+}
+.page .container .buttons  .equal{
+    background-color: #008080;
+}
+.page .container .buttons  .ac{
+    background-color: #dc143c;
+}
+.page .container .buttons .left{
+    position: relative;
+}
+.page .container .buttons .left::before{
+    content: "←";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0fa4f2;
+    width: 35px;
+    height: 30px;
+    font-size: 25px;
+    color: white;
+}
+.fa-brands{
+    color: #ff9f2e;
+    font-size: 30px;
+}
+.fa-solid{
+    color:#38c1fd;
+    font-size: 30px;
+}

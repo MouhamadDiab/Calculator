@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="page">
+        <div class="container">
+            <footer>
+                <p>Phenomenal <sup>TM</sup></p>
+                <div>
+                    <div class="time"> 13:14:25</div>
+                    <div class="date"> 21/7/2002</div>
+                </div>
+            </footer>
+            <!-- type -->
+            <div class="type">
+                <p class="font">AGGeyCal v2.1 </p>
+                <div><i class="fa-solid fa-user"></i></div>
+                <div><i class="fa-brands fa-github-square"></i></div>
+            </div>
+
+            <div class="good">
+                <p>Good <span></span> </p> 
+            </div>
+
+            <div class="result">
+                <div > <input type="text" placeholder="_"   id="resulting"></div>
+                <span id="finish_result">0</span>
+            </div>
+
+            
+                <div class="scientific-buttons">
+                    <button onclick="insert('(')"><pre>(</pre> </button>
+                    <button onclick="insert(')')"><pre>)</pre> </button>
+                    <button onclick="insert('Math.pow(,)')">x^</button>
+                    <button onclick="insert('Math.sqrt(')">√</button>
+                    <button onclick="insert('Math.cbrt(')">³√</button>
+                    <button onclick="insert('Math.sin(')">sin</button>
+                    <button onclick="insert('Math.cos(')">cos</button>
+                    <button onclick="insert('Math.tan(')">tan</button>
+                    <button onclick="insert('Math.log(')">log</button>
+                    <button onclick="insert('Math.PI')">π</button>
+                    <button onclick="insert('Math.asin(')">sin⁻¹</button>
+                    <button onclick="insert('Math.acos(')">cos⁻¹</button>
+                    <button onclick="insert('Math.atan(')">tan⁻¹</button>
+                    <button onclick="insert('Math.exp(')">x⁻¹</button>
+                    <button onclick="insert('%')">%</button>
+                </div>
+            
+                <div class="buttons">
+                    <button onclick="insert('7')">7</button>
+                    <button onclick="insert('8')">8</button>
+                    <button onclick="insert('9')">9</button>
+                    <button onclick="insert('/')" class="division">÷</button>
+        
+                    <button onclick="insert('4')">4</button>
+                    <button onclick="insert('5')">5</button>
+                    <button onclick="insert('6')">6</button>
+                    <button onclick="insert('*')" class="mult">×</button>
+        
+                    <button onclick="insert('1')">1</button>
+                    <button onclick="insert('2')">2</button>
+                    <button onclick="insert('3')">3</button>
+                    <button onclick="insert('-')" class="minus">−</button>
+        
+                    <button onclick="insert('0')">0</button>
+                    <button onclick="insert('.')">.</button>
+                    <button onclick="deleteLast()" class="left">←</button>
+                    <button onclick="insert('+')" class="plus">+</button>
+        
+                    <button onclick="clearScreen()" class="ac">AC</button>
+                    <button onclick="calculate()" class="equal">=</button>
+                </div>
+
+
+
+
+        </div>
+    </div>
+
+    
+
+    <script src="javascript.js"></script>
+</body>
+</html>
